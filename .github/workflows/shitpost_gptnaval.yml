@@ -3,7 +3,7 @@ name: Shitpost Naval
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '30 3,7,15,23 * * *'
+    - cron:  '30 5,18 * * *'
   workflow_dispatch:
 jobs:
   test:
@@ -14,4 +14,4 @@ jobs:
       with:
         node-version: '17'
     - run: npm ci
-    - run: npm start shitpost-naval
+    - run: npm start shitpost-gptnaval
