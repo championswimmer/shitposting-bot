@@ -26,6 +26,5 @@ export default async function auth () {
       oauth_verifier: urlObj.searchParams.get('oauth_verifier')!
     })
   }
-  console.log(userClient)
   return userClient!
 }
