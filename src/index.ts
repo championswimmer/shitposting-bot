@@ -2,6 +2,7 @@ import auth from './actions/auth'
 import { twClient } from './api/twitter-api'
 import { shitpostGPTNaval } from './shitpost/shitpost_gptnaval';
 import { shitpostNaval } from './shitpost/shitpost_naval'
+import { shitpostStonks } from './shitpost/shitpost_stonks';
 import { shitpostWarikoo } from './shitpost/shitpost_warikoo'
 import { scrapeGPTNaval } from './tasks/scrape_gptnaval'
 import { scrapeNaval } from './tasks/scrape_naval'
@@ -32,6 +33,9 @@ async function main () {
       break
     case 'shitpost-gptnaval':
       await shitpostGPTNaval(userClient)
+      break
+    case 'shitpost-stonks':
+      await shitpostStonks(userClient)
       break
     default:
       console.error('Unknown task')
