@@ -1,6 +1,7 @@
 import auth from './actions/auth'
 import { twClient } from './api/twitter-api'
 import { shitpostGPTNaval } from './shitpost/shitpost_gptnaval'
+import { shitpostInspireQuotes } from './shitpost/shitpost_inspirequotes';
 import { shitpostNaval } from './shitpost/shitpost_naval'
 import { shitpostPomp } from './shitpost/shitpost_pomp'
 import { shitpostStonks } from './shitpost/shitpost_stonks'
@@ -44,6 +45,9 @@ async function main () {
       break
     case 'shitpost-stonks':
       await shitpostStonks(userClient)
+      break
+    case 'shitpost-inspire-quotes':
+      await shitpostInspireQuotes(userClient)
       break
     default:
       console.error('Unknown task')
