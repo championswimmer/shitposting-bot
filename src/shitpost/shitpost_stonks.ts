@@ -52,7 +52,7 @@ It is hard to put in words how much $${sym} is worth today.
 For example on ${dt}, an investment of $${X} in ${co} would have been a sweet $${Y} today.
   `,
   `
-I just got to know that on ${dt} this person invested ${X} in ${co}. And never took it out. 
+I just got to know that on ${dt} this person invested $${X} in ${co}. And never took it out. 
 Today his $${sym} portfolio is worth $${Y}.
   `,
   `
